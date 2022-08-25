@@ -5,12 +5,9 @@ public class Codingbat1 {
     sleepIn(true, false) → false
     sleepIn(false, true) → true*/
   public static void main(String[] args) {
-      //checking
-      System.out.println( sleepIn(false, false));
+      System.out.println(true);
   }
     public static boolean sleepIn(boolean weekday, boolean vacation) {
-        if (!weekday && vacation){
-            return true;
-        }else return !weekday || vacation;
+       return !weekday || vacation;
     }
 }
