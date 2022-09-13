@@ -5,9 +5,7 @@
         endUp("hi") → "HI"*/
 public class CodingBat30 {
     public static String endUp(String str) {
-        if(str.length()>3){
-            String substring = str.substring(str.length() - 3);
-            return str.replace(substring, substring.toUpperCase());
-        } else return str.toUpperCase();
+        String substring = str.substring(str.length() - 3);
+        return str.length()>3 ? str.replace(substring, substring.toUpperCase()) : str.toUpperCase();
     }
 }
