@@ -18,17 +18,5 @@ public class CodingBat153 {
         }
         return map;
     }
-
-    public static String stringTimes(String str, int n) {
-        String ims =str.;
-
-        for (int i = 1; i < n + 1; i++) {
-            ims = str;
-        }
-        return ims;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(stringTimes("ab", 10));
-    }
+    
 }
