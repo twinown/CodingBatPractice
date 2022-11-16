@@ -15,4 +15,8 @@ public class CodingBat170 {
         }
         return bb;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
