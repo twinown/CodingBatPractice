@@ -1,0 +1,2 @@
+public class CodingBat194 {
+}
