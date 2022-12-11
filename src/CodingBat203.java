@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 /*
 Return the "centered" average of an array of ints, which we'll say is the mean average of the
         values, except ignoring the largest and smallest values in the array. If there are
@@ -11,8 +10,7 @@ Return the "centered" average of an array of ints, which we'll say is the mean a
         centeredAverage([-10, -4, -2, -4, -2, 0]) → -3*/
 public class CodingBat203 {
 
-    public static void centeredAverage(int[] nums) {
-        int [] nm = new int[nums.length-2];
+    public static int centeredAverage(int[] nums) {
         int sum = 0;
         int maxn = 0;
         int minn = 0;
@@ -26,26 +24,8 @@ public class CodingBat203 {
                 min = nums[i];
                 minn = i;
             }
-            if (){
-                nm[i] = nums[i];
-            }
-
+            sum += nums[i];
         }
-        nums[maxn] = 0;
-        nums[minn] = 0;
-   //     sum = sum - nums
-
-     System.out.println(sum);
-
-      /*  if(nums.length%2!=0){
-            res = nums[nums.length/2];
-        } else res = (nums[nums.length/2] + nums[(nums.length/2)-1])/2;
-        return res;*/
-    }
-
-
-    public static void main(String[] args) {
-       centeredAverage(new int[]{1, 2, 3, 4, 100});
-         //   System.out.println(centeredAverage(new int[]{1000, 0, 1, 99}));
+        return (sum - nums[maxn] - nums[minn]) / (nums.length - 2);
     }
 }
