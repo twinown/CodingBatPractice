@@ -6,7 +6,7 @@ We'll say that a value is "everywhere" in an array if for every
         isEverywhere([1, 2, 1, 3], 1) → true
         isEverywhere([1, 2, 1, 3], 2) → false
         isEverywhere([1, 2, 1, 3, 4], 1) → false*/
-public class CodingBat214_ne_sam_poisk_odinak_par {
+public class CodingBat214_ne_sam_poisk_odinak_par_po_vsemu_massivu {
     public static boolean isEverywhere(int[] nums, int val) {
             boolean b = true;
             for (int i = 0; i<nums.length-2;i++){
