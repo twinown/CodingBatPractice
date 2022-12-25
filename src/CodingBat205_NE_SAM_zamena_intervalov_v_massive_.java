@@ -4,7 +4,7 @@
         sum67([1, 2, 2]) → 5
         sum67([1, 2, 2, 6, 99, 99, 7]) → 5
         sum67([1, 1, 6, 7, 2]) → 4*/
-public class CodingBat205_zamena_intervalov_v_massive_NE_SAM {
+public class CodingBat205_NE_SAM_zamena_intervalov_v_massive_ {
     public static int sum67(int[] nums) {
         int sum = 0;
         for (int i = 0; i < nums.length; i++) {

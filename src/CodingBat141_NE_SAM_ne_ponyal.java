@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /*
 Start with two arrays of strings, A and B, each with its elements in alphabetical order and without duplicates.
         Return a new array containing the first N elements from the two arrays. The result array should be in
@@ -9,7 +7,7 @@ Start with two arrays of strings, A and B, each with its elements in alphabetica
         mergeTwo(["a", "c", "z"], ["b", "f", "z"], 3) → ["a", "b", "c"]
         mergeTwo(["a", "c", "z"], ["c", "f", "z"], 3) → ["a", "c", "f"]
         mergeTwo(["f", "g", "z"], ["c", "f", "g"], 3) → ["c", "f", "g"]*/
-public class CodingBat141_ne_sam_ne_ponyal {
+public class CodingBat141_NE_SAM_ne_ponyal {
     //  public static String[] mergeTwo(String[] a, String[] b, int n) {
 //}
     }

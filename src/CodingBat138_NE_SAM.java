@@ -7,7 +7,7 @@
         sumHeights2([5, 3, 6, 7, 2], 2, 4) → 7
         sumHeights2([5, 3, 6, 7, 2], 0, 1) → 2
         sumHeights2([5, 3, 6, 7, 2], 0, 4) → 15*/
-public class CodingBat138_ne_sam {
+public class CodingBat138_NE_SAM {
     public int sumHeights2(int[] heights, int start, int end) {
         int m = 0;
         for (int i = start; i <= end-1; i++) {

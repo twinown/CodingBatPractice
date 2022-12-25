@@ -4,7 +4,7 @@ Return a version of the given string, where for every star (*) in the string the
         starOut("ab*cd") → "ad"
         starOut("ab**cd") → "ad"
         starOut("sm*eilly") → "silly"*/
-public class CodingBat198_using_regex_wow_ne_sam {
+public class CodingBat198_NE_SAM_using_regex_wow_ {
     public static String starOut(String str) {
         return str.replaceAll("\\w?\\*\\w?","");
     }
