@@ -8,7 +8,7 @@ Return an array that contains the exact same numbers as the given array,
         zeroFront([1, 0, 0, 1]) → [0, 0, 1, 1]
         zeroFront([0, 1, 1, 0, 1]) → [0, 0, 1, 1, 1]
         zeroFront([1, 0]) → [0, 1]*/
-public class CodingBat230_NE_SAM_peredvizhenie_chisel_v_massive {
+public class CodingBat230_NE_SAM_peredvizhenie_chisel_v_nachalo_massiva {
     public static int[] zeroFront(int[] nums) {
         int count  = 0;
         for (int i = 0;i<nums.length;i++){
