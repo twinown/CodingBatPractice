@@ -6,4 +6,7 @@ Loop over the given array of strings to build a result string like this: when
         wordAppend(["a", "b", "a", "c", "a", "d", "a"]) → "aa"
         wordAppend(["a", "", "a"]) → "a"*/
 public class CodingBat240 {
+    public static void main(String[] args) {
+
+    }
 }
