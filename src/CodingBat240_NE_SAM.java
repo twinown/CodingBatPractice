@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.Map;
 
 /*
 Loop over the given array of strings to build a result string like this: when
@@ -8,15 +7,19 @@ Loop over the given array of strings to build a result string like this: when
         wordAppend(["a", "b", "a"]) → "a"
         wordAppend(["a", "b", "a", "c", "a", "d", "a"]) → "aa"
         wordAppend(["a", "", "a"]) → "a"*/
-public class CodingBat240 {
-    public static Map<String, Integer> wordAppend(String[] strings) {
-        Map<String,Integer> map = new HashMap<>();
-        int count = 0;
-        String str = "";
-            for (int i = 0;i<strings.length;i++) {
-              map.put(strings[i],i);
+public class CodingBat240_NE_SAM {
+    public static String wordAppend(String[] strings) {
+        HashMap<String, Integer> map = new HashMap<>();
+        StringBuilder result = new StringBuilder();
+        for (String s : strings)
+            if (!map.containsKey(s))
+                map.put(s, 1);
+            else {
+                map.put(s, map.get(s) + 1);
+                if (map.get(s) % 2 == 0)
+                    result.append(s);
             }
-        return map;
+        return result.toString();
     }
 
 
