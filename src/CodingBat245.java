@@ -16,7 +16,6 @@ public class CodingBat245 {
             String substring1 = base.substring(i, i + remove.length());
             if(substring1.equalsIgnoreCase(remove)){
                 s = s.replace(substring1,"");
-                ;
             }
         }
         return s;
