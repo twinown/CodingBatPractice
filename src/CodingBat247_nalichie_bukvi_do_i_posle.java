@@ -5,7 +5,7 @@ We'll say that a lowercase 'g' in a string is "happy" if there is
         gHappy("xxggxx") → true
         gHappy("xxgxx") → false
         gHappy("xxggyygxx") → false*/
-public class CodingBat247nalichie_bukvi_do_i_posle {
+public class CodingBat247_nalichie_bukvi_do_i_posle {
         public static boolean gHappy(String str) {
             boolean b =false;
             for (int i = 0; i < str.length()-1; i++) {
