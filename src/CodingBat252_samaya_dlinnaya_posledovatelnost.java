@@ -1,4 +1,4 @@
-public class CodingBat252_maxomalnaya_posledovatelnost {
+public class CodingBat252_samaya_dlinnaya_posledovatelnost {
     public static int maxBlock(String str) {
         int max = 0;
         int count;
