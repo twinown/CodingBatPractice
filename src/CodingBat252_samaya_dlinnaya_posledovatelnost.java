@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e378d3 (257)
 public class CodingBat252_samaya_dlinnaya_posledovatelnost {
     public static int maxBlock(String str) {
         int max = 0;
@@ -18,4 +22,8 @@ public class CodingBat252_samaya_dlinnaya_posledovatelnost {
     public static void main(String[] args) {
         System.out.println(maxBlock("XX2222BBBbbXX2222"));
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5e378d3 (257)

@@ -29,7 +29,10 @@ public class CodingBat256_NE_SAM_MENYAT_MESTAMI_V_MASSIVE {
                 afterThree = nums[i + 1];
                 nums[i + 1] = nums[numsFour];
                 nums[numsFour] = afterThree;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e378d3 (257)
             }
         }
         return nums;*/
@@ -39,4 +42,8 @@ public class CodingBat256_NE_SAM_MENYAT_MESTAMI_V_MASSIVE {
         System.out.println(Arrays.toString(fix34(new int[]
                 {1, 3, 1, 4, 4, 3, 1})));
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5e378d3 (257)

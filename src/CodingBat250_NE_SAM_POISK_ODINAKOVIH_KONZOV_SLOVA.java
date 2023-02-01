@@ -18,4 +18,8 @@ public class CodingBat250_NE_SAM_POISK_ODINAKOVIH_KONZOV_SLOVA {
     public static void main(String[] args) {
         System.out.println(sameEnds("xxodcj"));
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5e378d3 (257)
