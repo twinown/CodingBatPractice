@@ -8,36 +8,21 @@ Given n>=0, create an array length n*n with the following pattern, shown here fo
         squareUp(4) → [0, 0, 0, 1, 0, 0, 2, 1, 0, 3, 2, 1, 4, 3, 2, 1]*/
 public class CodingBat260 {
     public static int[] squareUp(int n) {
-        int shag = n-1;
-        int nnum;
+        int number;
+        int countN = n;
         int [] nums  = new int [n*n];
-        for (int i = 0;i<=nums.length-n;i=i+n){
-            nnum = 1;
-            for (int j = i;j<n;j++){
-                nums[shag] = nnum;
-               // if(shag<nums.length){
-                    shag = (n-1)+n;
-             //   }
-                if(i!=n-1){
-                    nums[j+1] = nnum+1;
-                }
+        for (int i = nums.length-1;i>=0 ;i = i-n){
+            number = i;
+            for (int j = 1;j<=countN;j++){
+                nums[i--] = j;
             }
+            i = number;
+            countN--;
         }
         return nums;
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(squareUp(3)));
+        System.out.println(Arrays.toString(squareUp(4)));
     }
 }
-
-
-   /* int shag = n-1;
-    int nnum = 1;
-    int [] nums  = new int [n*n];
-        for (int i = nums.length-1;i>=0 ;i = i-n ){
-                for (int j = 1;j<=n;j++){
-                nums[i--] = j;
-                }
-                }
-                return nums;*/
