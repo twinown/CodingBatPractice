@@ -11,7 +11,7 @@ public class CodingBat260 {
         int number;
         int countN = n;
         int [] nums  = new int [n*n];
-        for (int i = nums.length-1;i>=0 ;i = i-n){
+        for (int i = nums.length-1;i>=0;i-=n){
             number = i;
             for (int j = 1;j<=countN;j++){
                 nums[i--] = j;
