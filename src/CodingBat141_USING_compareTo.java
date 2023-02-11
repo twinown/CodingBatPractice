@@ -10,7 +10,6 @@ Start with two arrays of strings, A and B, each with its elements in alphabetica
         mergeTwo(["a", "c", "z"], ["c", "f", "z"], 3) → ["a", "c", "f"]
         mergeTwo(["f", "g", "z"], ["c", "f", "g"], 3) → ["c", "f", "g"]*/
 public class CodingBat141_USING_compareTo {
-
     public static String[] mergeTwo(String[] a, String[] b, int n) {
         int count = 0;
         String[] arr = new String[a.length + b.length];
