@@ -19,9 +19,9 @@ public class CodingBat141_USING_compareTo {
             arr[i] = a[i];
             last = i;
         }
-        for (int i = 0; i < b.length; i++) {
+        for (String s : b) {
             last++;
-            arr[last] = b[i];
+            arr[last] = s;
         }
         Arrays.sort(arr);
         for (int i = 0; i < arr.length - 1; i++) {
@@ -36,7 +36,7 @@ public class CodingBat141_USING_compareTo {
                 count++;
             }
         }
-        return arr;
+        return arr2;
     }
 
 
