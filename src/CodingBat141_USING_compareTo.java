@@ -14,6 +14,7 @@ public class CodingBat141_USING_compareTo {
         int count = 0;
         String[] arr = new String[a.length + b.length];
         String[] arr2 = new String[n];
+
         int last = 0;
         for (int i = 0; i < a.length; i++) {
             arr[i] = a[i];
