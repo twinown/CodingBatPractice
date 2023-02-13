@@ -8,11 +8,11 @@ Start with two arrays of strings, a and b, each in alphabetical order, possibly 
                 commonTwo(["a", "b", "c"], ["a", "b", "c"]) → 3*/
 public class CodingBat142_NE_SAM_POISK_ODINAK_BUKV_V_2_MASSIVAH {
     public static int commonTwo(String[] a, String[] b) {
-        int count = 0;
-        String str = "";
         //здесь не нужно искать минимум , либо максимум , чтоб знать, по какому массиву идти
         //здесь фишка проверки на дубликат в том, что кидаешь пройденные символы в string и
         // сравниваешь с ним
+        int count = 0;
+        String str = "";
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < b.length; j++) {
                 if (a[i].equals(b[j]) && !str.contains(a[i])) {
