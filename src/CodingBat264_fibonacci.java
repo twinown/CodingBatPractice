@@ -7,7 +7,7 @@
         fibonacci(0) → 0
         fibonacci(1) → 1
         fibonacci(2) → 1*/
-public class CodingBat264_recursion_continue {
+public class CodingBat264_fibonacci {
     public int fibonacci(int n) {
         int numb;
         if(n==0){
