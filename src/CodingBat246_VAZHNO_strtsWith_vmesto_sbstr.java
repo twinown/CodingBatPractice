@@ -1,4 +1,4 @@
-public class CodingBat246_VAZHNO_strts_with_vmesto_sbstr {
+public class CodingBat246_VAZHNO_strtsWith_vmesto_sbstr {
     public static boolean equalIsNot(String str) {
         int isCount  = 0;
         int notCount  = 0;
