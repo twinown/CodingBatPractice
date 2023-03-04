@@ -6,7 +6,16 @@ We'll say that a "pair" in a string is two instances of a char separated by a ch
         countPairs("axax") → 2
         countPairs("axbx") → 1*/
 public class CodingBat280 {
-    public int countPairs(String str) {
+    public static int countPairs(String str) {
+        if (str.length()>=3) {
+            if (str.charAt(0) == str.charAt(2)) {
+                return countPairs(str.substring(1)) + 1;
+            } else return countPairs(str.substring(1));
+        }
+        else return 0;
+    }
 
+    public static void main(String[] args) {
+        System.out.println(countPairs("axbx"));
     }
 }
