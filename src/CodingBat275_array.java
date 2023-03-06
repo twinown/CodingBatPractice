@@ -6,7 +6,7 @@
         array11([1, 2, 11], 0) → 1
         array11([11, 11], 0) → 2
         array11([1, 2, 3, 4], 0) → 0*/
-public class CodingBat275 {
+public class CodingBat275_array {
     public static int array11(int[] nums, int index) {
         int count = 0;
         if (nums.length!=0) {

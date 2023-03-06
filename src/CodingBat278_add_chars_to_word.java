@@ -4,7 +4,7 @@ Given a string, compute recursively a new string where identical chars that
         pairStar("hello") → "hel*lo"
         pairStar("xxyy") → "x*xy*y"
         pairStar("aaaa") → "a*a*a*a"*/
-public class CodingBat278 {
+public class CodingBat278_add_chars_to_word {
     public static String pairStar(String str) {
         String s = "";
         int index = 0;

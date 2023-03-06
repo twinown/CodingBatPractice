@@ -15,6 +15,8 @@ public class CodingBat277_and_palindrom {
     }
 
     public static String palindrom (String str){
+        
+
 // TODO: 02.03.2023 SDELAI 
         return str;
     }
