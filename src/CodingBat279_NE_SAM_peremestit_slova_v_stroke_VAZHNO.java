@@ -6,6 +6,6 @@ public class CodingBat279_NE_SAM_peremestit_slova_v_stroke_VAZHNO {
     }
 
     public static void main(String[] args) {
-        System.out.println(endX("xxre"));
+        System.out.println(endX("xxre")); //rexx
     }
 }
