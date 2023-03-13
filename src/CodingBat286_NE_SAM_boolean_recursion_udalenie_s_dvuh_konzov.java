@@ -1,4 +1,4 @@
-public class CodingBat286_boolean_recursion {
+public class CodingBat286_NE_SAM_boolean_recursion_udalenie_s_dvuh_konzov {
     public static boolean nestParen(String str) {
         if (str.length()==0){
             return true;
