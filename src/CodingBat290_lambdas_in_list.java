@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 public class CodingBat290_lambdas_in_list {
     public static List<Integer> doubling(List<Integer> nums) {
         return nums.stream().map(n->n*2).collect(Collectors.toList());
-
         //or
        /* nums.replaceAll(n->n*2);
         return nums;*/
