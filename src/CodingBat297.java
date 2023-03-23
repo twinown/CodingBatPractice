@@ -5,4 +5,11 @@ public class CodingBat297 {
         strings.replaceAll(n->n.toLowerCase());
         return strings;
     }
+
+    public static void main(String[] args) {
+
+        String s = "ant";
+        String b = "ant";
+        System.out.println(s.equals(b));
+    }
 }
