@@ -21,6 +21,6 @@ public class CodingBat299_NE_SAM {
     }
 
     public static void main(String[] args) {
-        System.out.println(groupSum());
+        System.out.println(groupSum(0, new int[]{5,6,2}, 8));
     }
 }
