@@ -5,7 +5,7 @@ public class CodingBat249_ASCII {
                 if (Character.isDigit(str.charAt(i))){
                   //  count = count + Integer.parseInt(String.valueOf(str.charAt(i)));
                     //or
-                 //   count = count + Character.getNumericValue(str.charAt(i));
+                    count += Character.getNumericValue(str.charAt(i));
                     //ASCII
                 count = count+ (int)str.charAt(i);
 
