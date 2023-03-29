@@ -1,3 +1,4 @@
+import javax.management.MBeanRegistration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,21 @@ public class CodingBat262_NE_SMOG_OCHEN_TRUDNAYA_MIRROR {
 //    public static List<Integer> maxMirror(int[] nums) {
 //        int n  = 0;
 
+    public static int maxMirror(int[] nums) {
+        String  s ="";
+        int length = nums.length;
+        for (int i = 0; i <nums.length; i++) {
+            length--;
+            for (int j = length; j>=0; j--){
+                if(nums[i]==nums[j]){
+                    s+=nums[i];
+                    break;
 
+                }
+            }
+        }
+        return s.length();
+    }
 
 
 
@@ -73,7 +88,7 @@ public class CodingBat262_NE_SMOG_OCHEN_TRUDNAYA_MIRROR {
    // }
 
     public static void main(String[] args) {
-      //  System.out.println(maxMirror(new int[]{1, 2, 3, 8, 9, 3, 2, 1}));       //3
+        System.out.println(maxMirror(new int[]{1, 2, 1, 20, 21, 1, 2, 1, 2, 23, 24, 2, 1, 2, 1, 25}));       //3
    //     System.out.println(maxMirror(new int[]{1, 2, 1, 4}));                   //3
       //  System.out.println(maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1}));          //2
     }
