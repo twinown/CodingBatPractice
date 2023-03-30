@@ -15,19 +15,22 @@ public class CodingBat262_NE_SMOG_OCHEN_TRUDNAYA_MIRROR {
 //        int n  = 0;
 
     public static int maxMirror(int[] nums) {
-        String  s ="";
+        String  prevS ="";
+        String  followS ="";
+        int max = 0;
         int length = nums.length;
         for (int i = 0; i <nums.length; i++) {
-            length--;
-            for (int j = length; j>=0; j--){
+            for (int j = length-1; j>=0; j--){
                 if(nums[i]==nums[j]){
-                    s+=nums[i];
-                    break;
-
+                    prevS+=nums[i];
+                  i++;
+                } else {
+                    followS = prevS;
+                    prevS = "";
                 }
             }
         }
-        return s.length();
+        return max;
     }
 
 
