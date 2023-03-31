@@ -1,4 +1,5 @@
 import javax.management.MBeanRegistration;
+import java.lang.ref.SoftReference;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,27 +12,55 @@ We'll say that a "mirror" section in an array is a group of contiguous elements 
         maxMirror([1, 2, 1, 4]) → 3
         maxMirror([7, 1, 2, 9, 7, 2, 1]) → 2*/
 public class CodingBat262_NE_SMOG_OCHEN_TRUDNAYA_MIRROR {
-//    public static List<Integer> maxMirror(int[] nums) {
-//        int n  = 0;
+
 
     public static int maxMirror(int[] nums) {
-        String  prevS ="";
-        String  followS ="";
-        int max = 0;
-        int length = nums.length;
-        for (int i = 0; i <nums.length; i++) {
-            for (int j = length-1; j>=0; j--){
-                if(nums[i]==nums[j]){
-                    prevS+=nums[i];
-                  i++;
-                } else {
-                    followS = prevS;
-                    prevS = "";
+        int count = 0;
+        List<Integer> stringsLength = new ArrayList<>();
+        for (int i = 0; i <nums.length  ; i++) {
+            for (int j = 1; j <nums.length ; j++) {
+                if (nums[j]>nums[j-1]){
+                    int temp  = nums[j-1];
+                    nums[j-1]  =nums[j];
+                    nums[j] = temp;
                 }
             }
         }
-        return max;
+        for (int i = 0; i < nums.length-1; i++) {
+            if (nums[i]==nums[i+1]){
+                stringsLength.add(nums[i]);
+
+            }
+        }
+        /*String prevS = "";
+        int max = 0;
+        int length = nums.length;
+        for (int i = 0; i < nums.length; i++) {
+       //     prevS = "";
+            for (int j = length - 1; j >= 0; j--) {
+                if (nums[i] == nums[j]) {
+                    i++;
+                    prevS+=nums[i];
+                } else
+            }
+
+        }
+        stringsLength.add(prevS.length());
+
+        max = stringsLength.get(0);
+        for (Integer i : stringsLength
+        ) {
+            if (i > max) {
+                max = i;
+            }
+        }
+        return max;*/
+        return stringsLength.size();
     }
+
+
+
+
 
 
 
@@ -88,11 +117,11 @@ public class CodingBat262_NE_SMOG_OCHEN_TRUDNAYA_MIRROR {
 
         }
         return list;*/
-   // }
+    // }
 
     public static void main(String[] args) {
-        System.out.println(maxMirror(new int[]{1, 2, 1, 20, 21, 1, 2, 1, 2, 23, 24, 2, 1, 2, 1, 25}));       //3
-   //     System.out.println(maxMirror(new int[]{1, 2, 1, 4}));                   //3
-      //  System.out.println(maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1}));          //2
+        System.out.println(maxMirror(new int[]{5, 9, 9, 4, 5, 4, 9, 9, 2}));       //3
+        //     System.out.println(maxMirror(new int[]{1, 2, 1, 4}));                   //3
+        //  System.out.println(maxMirror(new int[]{7, 1, 2, 9, 7, 2, 1}));          //2
     }
 }
