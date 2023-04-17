@@ -7,17 +7,18 @@
         sumHeights2([5, 3, 6, 7, 2], 2, 4) → 7
         sumHeights2([5, 3, 6, 7, 2], 0, 1) → 2
         sumHeights2([5, 3, 6, 7, 2], 0, 4) → 15*/
-public class CodingBat138_NE_SAM {
-    public int sumHeights2(int[] heights, int start, int end) {
-        int m = 0;
-        for (int i = start; i <= end-1; i++) {
-            if (heights[i] < heights[i+1]) {
-                m += 2 * (Math.abs(heights[i] - heights[i+1]));
-            }
-            else
-                m += Math.abs(heights[i] - heights[i+1]);
+public class CodingBat138 {
+    public static int sumHeights2(int[] heights, int start, int end) {
+        int result = 0;
+        for (int i = start; i < end; i++) {
+            if (heights[i] < heights[i + 1]) {
+                result += (heights[i + 1] - heights[i]) * 2;
+            } else result += heights[i] - heights[i + 1];
         }
-        return m;
+        return result;
     }
 
+    public static void main(String[] args) {
+        System.out.println(sumHeights2(new int[]{5, 3, 6, 7, 2},0,4));
+    }
 }
