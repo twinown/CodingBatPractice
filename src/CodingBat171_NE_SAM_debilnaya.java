@@ -4,7 +4,9 @@
         makeBricks(3, 1, 8) → true
         makeBricks(3, 1, 9) → false
         makeBricks(3, 2, 10) → true*/
-public class CodingBat171_NE_SAM_trudno {
+public class CodingBat171_NE_SAM_debilnaya {
+
+
     public boolean makeBricks(int small, int big, int goal) {
 
         return small+(big*5)>=goal&&goal%5<=small;
