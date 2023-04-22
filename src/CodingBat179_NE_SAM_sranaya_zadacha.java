@@ -6,12 +6,10 @@ We want make a package of goal kilos of chocolate. We have small bars (1 kilo ea
         makeChocolate(4, 1, 10) → -1
         makeChocolate(4, 1, 7) → 2*/
 public class CodingBat179_NE_SAM_sranaya_zadacha {
-    public int makeChocolate(int small, int big, int goal) {
-        int a = (goal - 5 * big);
-        if (a <= small && a >= 0)
-            return a;
-        if (a < 0 && goal % 5 <= small)
-            return goal % 5;
-        return -1;
+    public static int makeChocolate(int small, int big, int goal) {
+        while(big*5>goal){
+            big--;
+        }
+        return small+big*5>=goal?goal - big*5:-1;
     }
 }
