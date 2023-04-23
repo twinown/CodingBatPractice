@@ -5,7 +5,7 @@ We want make a package of goal kilos of chocolate. We have small bars (1 kilo ea
         makeChocolate(4, 1, 9) → 4
         makeChocolate(4, 1, 10) → -1
         makeChocolate(4, 1, 7) → 2*/
-public class CodingBat179_NE_SAM_sranaya_zadacha {
+public class CodingBat179 {
     public static int makeChocolate(int small, int big, int goal) {
         while(big*5>goal){
             big--;

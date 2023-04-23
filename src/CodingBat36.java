@@ -6,7 +6,7 @@ Given a string, return a new string made of 3 copies of the
         extraEnd("Hi") → "HiHiHi"*/
 public class CodingBat36 {
     public String extraEnd(String str) {
-        String st = str.substring(str.length()-2);
+         String st = str.substring(str.length()-2);
         return st+st+st;
     }
 
