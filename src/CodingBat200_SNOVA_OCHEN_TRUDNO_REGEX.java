@@ -4,7 +4,7 @@
         wordEnds("abcXY123XYijk", "XY") → "c13i"
         wordEnds("XY123XY", "XY") → "13"
         wordEnds("XY1XY", "XY") → "11"*/
-public class CodingBat200_NE_SAM_SNOVA_OCHEN_TRUDNO_REGEX {
+public class CodingBat200_SNOVA_OCHEN_TRUDNO_REGEX {
     public static String wordEnds(String str, String word) {
    /*     String ns = "";
         str = str.replace(word, "*");
@@ -28,7 +28,8 @@ public class CodingBat200_NE_SAM_SNOVA_OCHEN_TRUDNO_REGEX {
         }
         ns =ns.replace("*", "");
         return  ns;*/
-        return str.replaceAll(".*?(?=" + word + ")(?<=(.|^))" + word + "(?=(.|$))|.+", "$1$2");
+        return str.replaceAll(".*?(?=" + word + ")(?<=(.|^))" +
+                word + "(?=(.|$))|.+", "$1$2");
     }
     public static void main(String[] args) {
         System.out.println(wordEnds("XY", "XY"));
