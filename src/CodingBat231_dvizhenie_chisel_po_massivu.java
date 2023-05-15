@@ -1,4 +1,3 @@
-import java.util.Arrays;
 /*
 Return a version of the given array where all the 10's have been removed. The remaining
         elements should shift left towards the start of the array as needed, and the
@@ -7,7 +6,8 @@ Return a version of the given array where all the 10's have been removed. The re
         withoutTen([1, 10, 10, 2]) → [1, 2, 0, 0]
         withoutTen([10, 2, 10]) → [2, 0, 0]
         withoutTen([1, 99, 10]) → [1, 99, 0]*/
-public class CodingBat231_NE_SAM_dvizhenie_chisel_po_massivu {
+public class CodingBat231_dvizhenie_chisel_po_massivu {
+
     public static int[] withoutTen(int[] nums) {
         int count = 0;
         int[] nnums = new int[nums.length];
@@ -19,6 +19,6 @@ public class CodingBat231_NE_SAM_dvizhenie_chisel_po_massivu {
         return nnums;
     }
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(withoutTen(new int[]{10, 13, 10, 14, 10})));
+        //   System.out.println(Arrays.toString(withoutTen(new int[]{10, 13, 10, 14, 10})));
     }
 }
